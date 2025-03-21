@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Mohammed Ansari</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <!--<li><a href="#experience">Experience</a></li> -->
+          <li><a href="#contact">Contact</a></li> 
+          
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Mohammed Ansari</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic-1.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Mohammed Ansari</h1>
+        <p class="section__text__p2">Data Scientist</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='http://www.linkedin.com/in/imohammed-ansari'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/ByteMaverick'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+       <!-- <div class="section__pic-container">
+          <img
+            src="./assets/SJSU-logo.png"
+            alt="Profile picture"
+            class="about-pic"
+          /> 
+        </div>-->
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelors Degree in Data Science<br />San Jose State University</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Leadership</h3>
+              <p> Recuitment Offcier at ML@SJSU</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hi, I'm Mohammed Ansari, a sophomore pursuing a B.S. in Data Science at San Jose State University.
+              I'm passionate about machine learning, AI-driven automation, and IoT systems. 
+              My Interest lies in Scalable AI applications and Deep Learning.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+      <section id="skills">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="skills-container">
+          <div class="skill-category">
+            <h3>Programming Languages</h3>
+            <ul>
+              <li>Python</li>
+              <li>Java</li>
+              <li>SQL</li>
+              <li>Bash</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Data Science</h3>
+            <ul>
+              <li>NumPy</li>
+              <li>Pandas</li>
+              <li>Matplotlib</li>
+              <li>Scikit-learn</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Tools & Frameworks</h3>
+            <ul>
+              <li>Docker</li>
+              <li>Git</li>
+              <li>TensorFlow</li>
+              <li>Huggingface</li>
+              <li>Home Assistant</li>
+             
+            </ul>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#projects'"
+        />
+      </section>
+      
+    
+    <section id="projects">
+  <p class="section__text__p1">Featured Projects</p>
+  <h1 class="title">Projects</h1>
+
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <!-- Featured Project 1 -->
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">CropSynergy</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ByteMaverick/CropSynergy'">Github</button>
+          <!--<button class="btn btn-color-2 project-btn">Live Demo</button> -->
+        </div>
+      </div>
+
+      <!-- Featured Project 2 -->
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/fencing.png" alt="Project 2" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">AI Fencing Refree</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ByteMaverick/'">Github</button>
+          <!--<button class="btn btn-color-2 project-btn">Live Demo</button> -->
+        </div>
+      </div>
+
+      <!-- Featured Project 3 -->
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Home Automation System</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ByteMaverick/'">Github</button>
+          <!--<button class="btn btn-color-2 project-btn">Live Demo</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Show More Button -->
+  <button id="show-more-btn" onclick="document.querySelector('.additional-projects').classList.toggle('show')">
+    Show More
+  </button>
+
+  <!-- Additional Projects -->
+  <div class="additional-projects">
+    <!-- Machine Learning -->
+    <div class="additional-category">
+      <h3>Machine Learning</h3>
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/Black.png" alt="ML Project" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Face Classifier Model</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ByteMaverick/AECClassifier'">Github</button>
+         
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/Yellow.png" alt="ML Project" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Spam Detector Model(In Progress)</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ByteMaverick/Spam-Classifications'">Github</button>
+      
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/Black.png" alt="ML Project" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Titanic Survival Model</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ByteMaverick/Kaggle-Titanic-'">Github</button>
+            <!-- <button class="btn btn-color-2 project-btn">Demo</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CRUD Apps -->
+    <div class="additional-category">
+      <h3>CRUD Apps</h3>
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/budgetmanagement.png" alt="CRUD Project" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Penny Pilot(In Progress)</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ByteMaverick/PennyPilot'">Github</button>
+            <!-- <button class="btn btn-color-2 project-btn">Demo</button> -->
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/Sim.png" alt="CRUD Project" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title"> SimStation(In Progress)</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ByteMaverick/'">Github</button>
+            <!--<button class="btn btn-color-2 project-btn">Demo</button> -->
+          </div>
+        </div>
+
+       
+      </div>
+    </div>
+
+    <!-- Games -->
+    <div class="additional-category">
+      <h3>Games</h3>
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.png" alt="Game" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">MineField</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href=' https://github.com/ByteMaverick/mvcApps'">Github</button>
+           <!-- <button class="btn btn-color-2 project-btn">Demo</button> -->
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/flappylogo.png" alt="Game" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Flappy Bird Clone</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href=' https://github.com/ByteMaverick/FlappyBird'">Github</button>
+            <!-- <button class="btn btn-color-2 project-btn">Demo</button> -->
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/turtle.jpg" alt="Game" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Turtle Sketch</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn">Github</button>
+            <!-- <button class="btn btn-color-2 project-btn">Demo</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Arrow to Contact -->
+  <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#contact'"
+  />
+</section>
+
+      
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">mohammed.ansari@sjsu.edu</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="http://www.linkedin.com/in/imohammed-ansari'">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Mohammed Ansari. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
