@@ -262,18 +262,31 @@ section {
 }
 
 /* ABOUT SECTION */
+/* ABOUT SECTION */
 #about {
-  position: relative;
   padding: 2rem 0;
 }
 
-.about-containers {
+.section__text__p1 {
+  font-size: 1.2rem;
+  color: rgb(85, 85, 85);
+  text-align: center;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-container {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
-  margin-bottom: 1.5rem;
-  margin-top: 1.5rem;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about-details-container {
@@ -282,15 +295,13 @@ section {
   align-items: center;
   justify-content: center;
 }
-.text-container {
-  text-align: center;        /* centers the paragraph text */
 
-}
-
-.arrow {
-  position: absolute;
-  right: -4rem;
-  bottom: 2rem;
+.about-containers {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
 }
 
 .details-container {
@@ -298,12 +309,30 @@ section {
   flex: 1;
   background: white;
   border-radius: 2rem;
-  border: rgb(163, 163, 163) 0.1rem solid;
+  border: 0.1rem solid rgb(163, 163, 163);
   text-align: center;
   max-width: 100%;
   width: 100%;
 }
 
+.text-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1.5rem;
+  max-width: 800px;
+  padding: 0 1rem;
+}
+
+.text-container p {
+  max-width: 800px;
+}
+
+.arrow {
+  position: absolute;
+  right: -4rem;
+  bottom: 2rem;
+}
 /* EXPERIENCE SECTION
 #experience {
   position: relative;
