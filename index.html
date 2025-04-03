@@ -42,9 +42,6 @@
       </div>
     </nav>
     <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profilepic-4.png" alt="John Doe profile picture" />
-      </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Mohammed Ansari</h1>
@@ -334,30 +331,102 @@
     onclick="location.href='./#contact'"
   />
 </section>
+<section id="coursework">
+  <p class="section__text__p1">Explore My</p>
+  <h1 class="title">Coursework</h1>
+  <div class="coursework-container">
+    <div class="coursework-category">
+      <h3>Computer Science</h3>
+      <ul>
+        <li>Data Structures and Algoithms</li>
+        <li>Advance Progmming in Python</li>
+        <li>Big Data Processing</li>
+        <li>Object Oriented Design</li>
+        <li>Database Management</li>
+      </ul>
+    </div>
+    <div class="coursework-category">
+      <h3>Mathematics for Data Science</h3>
+      <ul>
+        <li>Calculus I & II</li>
+        <li>Discrete Math</li>
+        <li>Linear Algebra</li>
+      </ul>
+    </div>
+    <div class="coursework-category">
+      <h3>Fall 2025 Coursework</h3>
+      <ul>
+        <li>Machine Learning </li>
+        <li>Into to Artificial Intelligence</li>
+        <li>Advance Database Management</li>
+        <li>Applied Probability and Statictis</li>
+        <li>Ethics in Technology </li>
+       
+      </ul>
+    </div>
+  </div>
+  <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#projects'"
+  />
+</section>
+
+
 
       
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">mohammed.ansari@sjsu.edu</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="http://www.linkedin.com/in/imohammed-ansari'">LinkedIn</a></p>
-        </div>
+<section id="contact">
+  <p class="section__text__p1">Get in Touch</p>
+  <h1 class="title">Contact Me</h1>
+  
+  <div class="contact-content">
+    <!-- Existing contact info -->
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img
+          src="./assets/email.png"
+          alt="Email icon"
+          class="icon contact-icon email-icon"
+        />
+        <p><a href="mailto:mohammed.ansari@sjsu.edu">mohammed.ansari@sjsu.edu</a></p>
       </div>
-    </section>
+      <div class="contact-info-container">
+        <img
+          src="./assets/linkedin.png"
+          alt="LinkedIn icon"
+          class="icon contact-icon"
+        />
+        <p><a href="http://www.linkedin.com/in/imohammed-ansari">LinkedIn</a></p>
+      </div>
+    </div>
+
+    <!-- New contact form -->
+    <div class="contact-form-container">
+      <form 
+        id="contact-form" 
+        action="https://formspree.io/f/mjkyarbo" 
+        method="POST"
+        onsubmit="return handleSubmit(event)"
+      >
+    <div class="form-group">
+    <input type="text" id="name" name="name" placeholder="Your Name" required>
+    </div>
+    <div class="form-group">
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+    </div>
+    <div class="form-group">
+    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+    </div>
+    <div class="form-group">
+    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+    </div>
+        <button type="submit" class="btn btn-color-2">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
     <footer>
       <nav>
         <div class="nav-links-container">
@@ -372,5 +441,31 @@
       <p>Copyright &#169; 2025 Mohammed Ansari. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
+    
+
+    <div id="chatbot-container">
+      <div id="chatbot-header" onclick="toggleChatbot()">
+        Hi! I’m Gracie 👋
+        <div id="gracie-intro">
+          Hi! I’m Gracie 👋<br />
+          Ask me any question about Mohammed.
+        </div>
+      </div>
+      <div id="chatbot-body">
+        <div id="chatbot-messages">
+          <div class="bot-message">
+            Hello! Mohammed is currently working on me 😀. He is creating a personalized AI assistant to help answer questions about his background, skills, and projects.
+          </div>
+        </div>
+        <input
+          type="text"
+          id="chatbot-input"
+          placeholder="Type a message..."
+          onkeydown="if(event.key === 'Enter') sendMessage()"
+        />
+      </div>
+    </div>
+    
+    
   </body>
 </html>
