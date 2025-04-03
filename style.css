@@ -814,6 +814,11 @@ footer p {
   outline: 2px solid var(--primary-color);
   outline-offset: -1px;
 }
+#contact-form button:hover {
+  background: #000000; /* or any other color you prefer */
+  color: white;
+  border-color: white;
+}
 
 #contact-form button {
   align-self: center;

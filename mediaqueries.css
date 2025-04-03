@@ -61,8 +61,8 @@
 
 @media screen and (max-width: 600px) {
   #profile {
-    height: auto;
-    margin-bottom: 0;
+    min-height: auto;
+    padding: 1rem 1rem;
   }
 
   section {
@@ -70,8 +70,7 @@
   }
 
   .section__pic-container {
-    width: 200px;
-    height: 200px;
+    display: none; 
   }
 
   .about-containers,
