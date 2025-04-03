@@ -28,7 +28,7 @@ function sendMessage() {
     // Add bot response (placeholder response)
     const botMessage = document.createElement('div');
     botMessage.className = 'bot-message';
-    botMessage.textContent = 'Thank you for your message! I will get back to you shortly.';
+    botMessage.textContent = 'Oops! I’m still in development right now, but I’ll be ready to help you soon! ';
     messages.appendChild(botMessage);
 
     // Clear input field
